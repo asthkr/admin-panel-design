@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -31,15 +32,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="profile-setting">
-                                <div class="icon-box"></div>
-                            </div>
-
                         </div>
                     </div>
                     <div class="nav-main">
                         <div class="d-flex flex-column">
-                            <div class="nav-box">
+                            <a href="invoice.html" class="nav-item active">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="20" height="22" viewBox="0 0 20 22" fill="none"
@@ -60,8 +57,8 @@
                                         Invoices
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#" class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon"> <svg class="static-icon" width="20" height="22"
                                             viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,8 +78,8 @@
                                         expenses
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#" class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon"><svg class="static-icon" width="22" height="22"
                                             viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +116,7 @@
                                         Analytics
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -128,7 +125,7 @@
                 <div class="d-flex flex-column gap-3">
                     <div class="sec-nav">
                         <div class="d-flex flex-column">
-                            <div class="nav-box">
+                            <a href="index.html" class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="24" height="21" viewBox="0 0 24 21" fill="none"
@@ -181,8 +178,8 @@
                                         Clients
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#" class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -214,8 +211,8 @@
                                         Items
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#"  class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="20" height="22" viewBox="0 0 20 22" fill="none"
@@ -240,8 +237,8 @@
                                         Paid Invoices
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#"  class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -277,8 +274,8 @@
                                         Bank Details
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#"  class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="20" height="22" viewBox="0 0 20 22" fill="none"
@@ -339,7 +336,7 @@
                                         Tax Return
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
@@ -352,7 +349,10 @@
                     <div class="lside d-flex align-items-center gap-3">
                         <div class="bck-btn">
                             <button class="btn">
-                                <img src="images/arrow-left.svg" alt="">
+                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48809 0.430571C7.80259 0.700138 7.83901 1.17361 7.56944 1.48811L1.98781 8.00001L7.56944 14.5119C7.83901 14.8264 7.80259 15.2999 7.48809 15.5695C7.1736 15.839 6.70012 15.8026 6.43056 15.4881L0.430558 8.48811C0.189814 8.20724 0.189814 7.79279 0.430558 7.51192L6.43056 0.51192C6.70012 0.197426 7.1736 0.161005 7.48809 0.430571Z" fill="#7799B0"/>
+                                    </svg>
+                                    
                             </button>
                         </div>
                         <h3>Invoice</h3>
@@ -373,7 +373,10 @@
                         <div class=" d-flex justify-content-between ">
 
                             <h3 class="clientName">Brewguard Manufacturer SA</h3>
-                            <div class="edit-btn"><img src="images/Edit.svg" alt=""></div>
+                            <div class="edit-btn"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7566 1.62145C15.5852 -0.207149 18.55 -0.207149 20.3786 1.62145C22.2072 3.45005 22.2072 6.41479 20.3786 8.24339L10.8933 17.7287C10.3514 18.2706 10.0323 18.5897 9.67745 18.8665C9.25915 19.1927 8.80655 19.4725 8.32766 19.7007C7.92136 19.8943 7.49334 20.037 6.76623 20.2793L3.43511 21.3897L2.63303 21.6571C1.98247 21.8739 1.26522 21.7046 0.780321 21.2197C0.29542 20.7348 0.126102 20.0175 0.342956 19.367L1.72068 15.2338C1.96303 14.5067 2.10568 14.0787 2.29932 13.6724C2.52755 13.1935 2.80727 12.7409 3.13354 12.3226C3.41035 11.9677 3.72939 11.6487 4.27137 11.1067L13.7566 1.62145ZM3.40051 19.8201L6.24203 18.8729C7.03314 18.6092 7.36927 18.4958 7.68233 18.3466C8.06287 18.1653 8.42252 17.943 8.75492 17.6837C9.02837 17.4704 9.28013 17.2205 9.86979 16.6308L17.4393 9.06137C16.6506 8.78321 15.6346 8.26763 14.6835 7.31651C13.7324 6.36538 13.2168 5.34939 12.9387 4.56075L5.36917 12.1302C4.77951 12.7199 4.52959 12.9716 4.3163 13.2451C4.05704 13.5775 3.83476 13.9371 3.65341 14.3177C3.50421 14.6307 3.3908 14.9669 3.12709 15.758L2.17992 18.5995L3.40051 19.8201ZM14.1554 3.34404C14.1896 3.519 14.2474 3.75684 14.3438 4.03487C14.561 4.66083 14.9712 5.48288 15.7442 6.25585C16.5171 7.02881 17.3392 7.43903 17.9651 7.6562C18.2432 7.75266 18.481 7.81046 18.656 7.84466L19.3179 7.18272C20.5607 5.93991 20.5607 3.92492 19.3179 2.68211C18.0751 1.4393 16.0601 1.4393 14.8173 2.68211L14.1554 3.34404Z" fill="#7799B0"/>
+                                </svg>
+                                </div>
                         </div>
 
                         <span class="divider-line"></span>
@@ -399,7 +402,10 @@
                     <div class="rside">
 
                         <button class="btn">
-                            <img src="images/plus-sm.svg" alt="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.25C12.4142 5.25 12.75 5.58579 12.75 6V11.25H18C18.4142 11.25 18.75 11.5858 18.75 12C18.75 12.4142 18.4142 12.75 18 12.75H12.75V18C12.75 18.4142 12.4142 18.75 12 18.75C11.5858 18.75 11.25 18.4142 11.25 18V12.75L6 12.75C5.58579 12.75 5.25 12.4142 5.25 12C5.25 11.5858 5.58579 11.25 6 11.25L11.25 11.25V6C11.25 5.58579 11.5858 5.25 12 5.25Z" fill="#7799B0"/>
+                                </svg>
+                                
                         </button>
                     </div>
                 </div>
@@ -415,9 +421,9 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="script.js"></script>
 </body>
 
 </html>

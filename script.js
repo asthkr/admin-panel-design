@@ -1,0 +1,32 @@
+
+// document.querySelectorAll(".nav-item").forEach((ele) =>
+//     ele.addEventListener("click", function (event) {
+//       event.preventDefault();
+//       document
+//         .querySelectorAll(".nav-item")
+//         .forEach((ele) => ele.classList.remove("active"));
+//       this.classList.add("active")
+//     })
+//   );
+
+  $(document).ready(function(){
+    $('#select_all').on('click',function(){
+        if(this.checked){
+            $('.checkbox').each(function(){
+                this.checked = true;
+            });
+        }else{
+             $('.checkbox').each(function(){
+                this.checked = false;
+            });
+        }
+    });
+    
+    $('.checkbox').on('click',function(){
+        if($('.checkbox:checked').length == $('.checkbox').length){
+            $('#select_all').prop('checked',true);
+        }else{
+            $('#select_all').prop('checked',false);
+        }
+    });
+});

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                     </div>
                     <div class="nav-main">
                         <div class="d-flex flex-column">
-                            <div class="nav-box">
+                            <a href="invoice.html" class="nav-item ">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="20" height="22" viewBox="0 0 20 22" fill="none"
@@ -58,8 +59,8 @@
                                         Invoices
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#" class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon"> <svg class="static-icon" width="20" height="22"
                                             viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,8 +80,8 @@
                                         expenses
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#" class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon"><svg class="static-icon" width="22" height="22"
                                             viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +118,7 @@
                                         Analytics
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +127,7 @@
                 <div class="d-flex flex-column gap-3">
                     <div class="sec-nav">
                         <div class="d-flex flex-column">
-                            <div class="nav-box">
+                            <a href="index.html" class="nav-item active">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="24" height="21" viewBox="0 0 24 21" fill="none"
@@ -179,8 +180,8 @@
                                         Clients
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#" class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -212,8 +213,8 @@
                                         Items
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#"  class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="20" height="22" viewBox="0 0 20 22" fill="none"
@@ -238,8 +239,8 @@
                                         Paid Invoices
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#"  class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -275,8 +276,8 @@
                                         Bank Details
                                     </div>
                                 </div>
-                            </div>
-                            <div class="nav-box">
+                            </a>
+                            <a href="#"  class="nav-item">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
                                         <svg class="static-icon" width="20" height="22" viewBox="0 0 20 22" fill="none"
@@ -337,7 +338,7 @@
                                         Tax Return
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
@@ -347,10 +348,18 @@
         <div class="main">
             <div class="sec-head">
                 <div class="d-flex align-items-center justify-content-between">
-                    <div class="lside">
+                    <div class="lside  d-flex align-items-center gap-3">
+                        <div class="bck-btn">
+                            <button class="btn">
+                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48809 0.430571C7.80259 0.700138 7.83901 1.17361 7.56944 1.48811L1.98781 8.00001L7.56944 14.5119C7.83901 14.8264 7.80259 15.2999 7.48809 15.5695C7.1736 15.839 6.70012 15.8026 6.43056 15.4881L0.430558 8.48811C0.189814 8.20724 0.189814 7.79279 0.430558 7.51192L6.43056 0.51192C6.70012 0.197426 7.1736 0.161005 7.48809 0.430571Z" fill="#7799B0"/>
+                                    </svg>
+                                    
+                            </button>
+                        </div>
                         <h3>Client</h3>
                     </div>
-                    <div class="rside d-flex align-items-center gap-3">
+                    <div class="rside d-none d-md-flex align-items-center gap-3">
                         <input type="search" name="Search" placeholder="Search for client" id="searchBox">
                         <button class="btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -368,7 +377,7 @@
                     <thead>
                         <tr>
                             <th class="tg-0lax">
-                                <div class="checkbox"><input type="checkbox" id="selectallcheckbox" name="Selectall" />
+                                <div class="checkboxWrapper"><input type="checkbox" id="select_all" name="Selectall" />
                                 </div>
                             </th>
                             <th class="tg-0lax">
@@ -384,7 +393,7 @@
                     </thead>
                     <tbody>
                         <tr class="even">
-                            <td class="tg-0lax">  <div class="checkbox"><input type="checkbox" id="selectbox" name="Selectone" />
+                            <td class="tg-0lax">  <div class="checkboxWrapper"><input  class="checkbox" type="checkbox" id="select[]" name="Selectone" />
                             </div></td>
                             <td class="tg-0lax"><div class="clientName"><h6> Sennhauser</h6></div></td>
                             <td class="tg-0lax"><div class="clientLocation"><h6>Bern</h6></div></td>
@@ -402,7 +411,7 @@
                             </div></td>
                         </tr>
                         <tr class="odd">
-                            <td class="tg-0lax"> <div class="checkbox"><input type="checkbox" id="selectbox" name="Selectone" />
+                            <td class="tg-0lax"> <div class="checkboxWrapper"><input class="checkbox" type="checkbox" id="select[]" name="Selectone" />
                             </div></td>
                             <td class="tg-0lax"><div class="clientName"><h6>Ammie Sennhauser</h6></div></td>
                             <td class="tg-0lax"><div class="clientLocation"><h6>Bern</h6></div></td>
@@ -422,7 +431,7 @@
                         </tr>
                         <tr class="even">
 
-                            <td class="tg-0lax"> <div class="checkbox"><input type="checkbox" id="selectbox" name="Selectone" />
+                            <td class="tg-0lax"> <div class="checkboxWrapper"><input class="checkbox" type="checkbox" id="select[]" name="Selectone" />
                             </div></td>
                                                         <td class="tg-0lax"><div class="clientName"><h6>Liv Lenher</h6></div></td>
                             <td class="tg-0lax"><div class="clientLocation"><h6>Zeneva</h6></div></td>
@@ -441,7 +450,7 @@
                         </tr>
                         <tr class="odd">
 
-                            <td class="tg-0lax"> <div class="checkbox"><input type="checkbox" id="selectbox" name="Selectone" />
+                            <td class="tg-0lax"> <div class="checkboxWrapper"><input class="checkbox" type="checkbox" id="select[]" name="Selectone" />
                             </div></td>
                             <td class="tg-0lax"><div class="clientName"><h6>Matto Graf</h6></div></td>
                             <td class="tg-0lax"><div class="clientLocation"><h6>Zurich</h6></div></td>
@@ -460,7 +469,7 @@
                         </tr>
                         <tr class="even">
 
-                            <td class="tg-0lax"> <div class="checkbox"><input type="checkbox" id="selectbox" name="Selectone" />
+                            <td class="tg-0lax"> <div class="checkboxWrapper"><input class="checkbox" type="checkbox" id="select[]" name="Selectone" />
                             </div></td>
                             <td class="tg-0lax"><div class="clientName"><h6>Ammie Sennhauser</h6></div></td>
                             <td class="tg-0lax"><div class="clientLocation"><h6>Bern</h6></div></td>
@@ -479,7 +488,7 @@
                         </tr>
                         <tr class="odd">
 
-                            <td class="tg-0lax"> <div class="checkbox"><input type="checkbox" id="selectbox" name="Selectone" />
+                            <td class="tg-0lax"> <div class="checkboxWrapper"><input class="checkbox" type="checkbox" id="select[]" name="Selectone" />
                             </div></td>
                             <td class="tg-0lax"><div class="clientName"><h6>Matto Graf</h6></div></td>
                             <td class="tg-0lax"><div class="clientLocation"><h6>Zurich</h6></div></td>
@@ -498,7 +507,7 @@
                         </tr>
                         <tr class="even">
 
-                            <td class="tg-0lax"> <div class="checkbox"><input type="checkbox" id="selectbox" name="Selectone" />
+                            <td class="tg-0lax"> <div class="checkboxWrapper"><input class="checkbox" type="checkbox" id="select[]" name="Selectone" />
                             </div></td>
                             <td class="tg-0lax"><div class="clientName"><h6>Ammie Sennhauser</h6></div></td>
                             <td class="tg-0lax"><div class="clientLocation"><h6>Bern</h6></div></td>
@@ -518,11 +527,21 @@
                     </tbody>
                 </table>
             </div>
+            <div class="rside d-flex d-md-none justify-content-center align-items-center gap-3">
+                <input type="search" name="Search" placeholder="Search for client" id="searchBox">
+                <button class="btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 3.25C12.4142 3.25 12.75 3.58579 12.75 4V11.25H20C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H12.75V20C12.75 20.4142 12.4142 20.75 12 20.75C11.5858 20.75 11.25 20.4142 11.25 20V12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H11.25V4C11.25 3.58579 11.5858 3.25 12 3.25Z"
+                            fill="#09253a" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
